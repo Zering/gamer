@@ -1,11 +1,11 @@
-package com.jps;
+package com.map;
 
-public class GridWrapper {
+public class GridWrapper<T> {
 
-    private Grid grid;
+    private T grid;
     private int offsetMS;
 
-    public GridWrapper(Grid g) {
+    public GridWrapper(T g) {
         this.grid = g;
     }
 
@@ -17,7 +17,7 @@ public class GridWrapper {
         this.offsetMS = offsetMS;
     }
 
-    public Grid getGrid() {
+    public T getGrid() {
         return grid;
     }
 }

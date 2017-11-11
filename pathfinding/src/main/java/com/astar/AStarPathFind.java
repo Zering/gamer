@@ -146,6 +146,10 @@ public class AStarPathFind {
         }
     }
 
+    public static int calPath(List<AGrid> path, AGrid star, AGrid goal) {
+        return calPath(path, star.getRow(), star.getCol(), goal.getRow(), goal.getCol());
+    }
+
     public static List<AGrid> astar(int fx, int fy, int tx, int ty, DictMapDataVO mdDVO) {
         return astar(new AGrid(fy, fx), new AGrid(ty, tx), mdDVO);
     }

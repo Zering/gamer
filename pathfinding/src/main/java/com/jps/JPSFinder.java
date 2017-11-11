@@ -120,7 +120,7 @@ public class JPSFinder {
      * Returns a path of the parent nodes from a given node.
      */
     private Queue<Grid> backTrace(Grids grids, Grid g, Map<Grid, Grid> parentMap) {
-        LinkedList<Grid> path = new LinkedList<Grid>();
+        LinkedList<Grid> path = new LinkedList<>();
         path.add(g);
         int prevX, prevY, currX, currY;
         int dx, dy;
