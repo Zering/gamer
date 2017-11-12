@@ -2,11 +2,17 @@ package com.astar;
 
 public class AGrid implements Comparable<AGrid> {
 
+    // 横坐标
     int row;
+    // 纵坐标
     int col;
+    // 连接该节点的父节点
     AGrid parent;
+    // 从起点到该节点已经走过的距离
     int f;
+    // 从该节点到终点的曼哈顿距离
     int g;
+    // f + g
     int h;
     private double moveTime;
     private double moveDistance;
@@ -73,7 +79,7 @@ public class AGrid implements Comparable<AGrid> {
 
     @Override
     public String toString() {
-        return "(" + col + "," + row + "," + moveTime + ")";
+        return "(" + col + "," + row + ")";
     }
 
     public int getRow() {
