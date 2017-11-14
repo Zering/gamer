@@ -110,7 +110,7 @@ public class AStarPathFind {
     private static final double xpx = Math.sqrt(Math.pow(48, 2) + Math.pow(32, 2));
 
     public static int calPath(List<AGrid> path, int frow, int fcol, int trow, int tcol) {
-        if (path == null) {
+        if (path == null || path.isEmpty()) {
             log.error("(" + fcol + "," + frow + ") -> (" + tcol + "," + trow + ") no path found");
             return 0;
         } else {
@@ -144,6 +144,10 @@ public class AStarPathFind {
             //log.error("\r\n(" + fcol + "," + frow + ")" + sb + "\r\nmove ms=" + ms);
             return ms;
         }
+    }
+
+    public static int calPath(List<AGrid> path, AGrid star, AGrid goal) {
+        return calPath(path, star.getRow(), star.getCol(), goal.getRow(), goal.getCol());
     }
 
     public static List<AGrid> astar(int fx, int fy, int tx, int ty, DictMapDataVO mdDVO) {

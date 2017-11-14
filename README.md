@@ -5,6 +5,8 @@ Java做手游服务端会用到的一些实用的框架
     
     Jump Point Search 跳点寻路算法  A*算法的变种
     
-    A*算法 TODO
+    A*算法
+    
+    Breadth-First-Search 广度优先算法
     
 To Be Continue!
