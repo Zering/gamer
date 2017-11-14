@@ -31,8 +31,8 @@ public class AStarTest extends Test{
         short tx = 39;
         short ty = 34;
 
-        AGrid start = new AGrid(cy, cx);
-        AGrid goal = new AGrid(ty, tx);
+        AGrid start = new AGrid(cx, cy);
+        AGrid goal = new AGrid(tx, ty);
         DictMapDefineVO mapInfo = MapsGenerator.getMapInfo(mapId);
 
         final Map<Integer, MoveUser> userMap = Maps.newConcurrentMap();
@@ -66,6 +66,7 @@ public class AStarTest extends Test{
             }
         }
         sleep(Long.MAX_VALUE);
+
     }
 
 }
