@@ -24,7 +24,7 @@ public class BFSFinder {
         Queue<BGrid> open = new LinkedList<>();
         ArrayList<BGrid> close = new ArrayList<>();
         BGrid cur = new BGrid(from);
-        BGrid tmp = null;
+        BGrid tmp;
         open.add(cur);
         while (!open.isEmpty()) {
             open.poll();

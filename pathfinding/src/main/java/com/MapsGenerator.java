@@ -6,17 +6,16 @@ import java.net.URL;
 import java.util.Enumeration;
 import java.util.Map;
 
-import com.jps.Grid;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Maps;
 import com.jps.Grids;
 import com.map.DictMapDataVO;
 import com.map.DictMapDefineVO;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created by zhanghaojie on 2017/11/10.

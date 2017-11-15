@@ -2,9 +2,7 @@ package com.bfs;
 
 /**
  * Created by zhanghaojie on 2017/11/14.
- *
  * 节点
- *
  */
 public class BGrid {
 
@@ -24,13 +22,14 @@ public class BGrid {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         BGrid bGrid = (BGrid) o;
 
-        if (row != bGrid.row) return false;
-        return col == bGrid.col;
+        return row == bGrid.row && col == bGrid.col;
     }
 
     @Override
@@ -42,10 +41,7 @@ public class BGrid {
 
     @Override
     public String toString() {
-        return "BGrid{" +
-                "row=" + row +
-                ", col=" + col +
-                '}';
+        return "BGrid{" + "row=" + row + ", col=" + col + '}';
     }
 
     public int getRow() {

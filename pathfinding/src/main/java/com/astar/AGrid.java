@@ -14,9 +14,6 @@ public class AGrid implements Comparable<AGrid> {
     int g;
     // f + g
     int h;
-    private double moveTime;
-    private double moveDistance;
-    private double passMS;
 
     public AGrid(int row, int col) {
         this.row = row;
@@ -88,38 +85,6 @@ public class AGrid implements Comparable<AGrid> {
 
     public int getCol() {
         return col;
-    }
-
-    public double getMoveTime() {
-        return moveTime;
-    }
-
-    public void setMoveTime(double moveTime) {
-        this.moveTime = moveTime;
-    }
-
-    public double getMoveDistance() {
-        return moveDistance;
-    }
-
-    public void setMoveDistance(double moveDistance) {
-        this.moveDistance = moveDistance;
-    }
-
-    public double getPassMS() {
-        return passMS;
-    }
-
-    public void setPassMS(double passMS) {
-        this.passMS = passMS;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
-    }
-
-    public void setCol(int col) {
-        this.col = col;
     }
 
 }

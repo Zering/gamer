@@ -22,7 +22,7 @@ public class AStarPathFind {
     static final double TILE_HEIGHT = 32.0D;//px
     static final double TILE_WIDTH = 48.0D;//px
     static final double TILE_DIAGONAL = Math.sqrt(Math.pow(TILE_HEIGHT, 2) + Math.pow(TILE_WIDTH, 2));//px
-    static final double DEFAULT_SPEED = 250.0D;
+    // static final double DEFAULT_SPEED = 250.0D;
 
     public static List<AGrid> astar(AGrid from, AGrid to, DictMapDataVO mdDVO) {
         byte[][] map = mdDVO.getData();

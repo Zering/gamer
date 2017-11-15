@@ -25,14 +25,14 @@ public class AStarTest extends Test{
         MapsGenerator.scanMaps();
         short mapId = 1001;
         // 起点
-        short cx = 21;
-        short cy = 53;
+        short cx = 21; // col
+        short cy = 53; // row
         // 终点
         short tx = 39;
         short ty = 34;
 
-        AGrid start = new AGrid(cx, cy);
-        AGrid goal = new AGrid(tx, ty);
+        AGrid start = new AGrid(cy, cx);
+        AGrid goal = new AGrid(ty, tx);
         DictMapDefineVO mapInfo = MapsGenerator.getMapInfo(mapId);
 
         final Map<Integer, MoveUser> userMap = Maps.newConcurrentMap();

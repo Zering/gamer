@@ -9,4 +9,7 @@ Java做手游服务端会用到的一些实用的框架
     
     Breadth-First-Search 广度优先算法
     
+    
+ps： 先按各种算法单独实现, 加深理解后, 再抽取通用类和方法进行整合
+
 To Be Continue!
