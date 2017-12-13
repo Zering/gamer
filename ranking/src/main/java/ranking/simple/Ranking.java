@@ -73,7 +73,7 @@ public class Ranking<DATA extends RankData<DATA>> {
             int preIndex = rank - 2;
             if (preIndex >= 0 && preIndex < rankList.size()) {
                 DATA pre = rankList.get(preIndex);
-                if (data.compareTo(pre) == 1) { // 排行数据比前一名高了
+                if (data.compareTo(pre) == -1) { // 排行数据比前一名高了
                     sort = true;
                 }
             }
@@ -81,7 +81,7 @@ public class Ranking<DATA extends RankData<DATA>> {
                 int nextIndex = rank;
                 if (nextIndex < rankList.size()) {
                     DATA next = rankList.get(nextIndex);
-                    if (data.compareTo(next) == -1) { // 排行数据句比后一名低了
+                    if (data.compareTo(next) == 1) { // 排行数据句比后一名低了
                         sort = true;
                     }
                 }
