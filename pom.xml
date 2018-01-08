@@ -11,6 +11,7 @@
   <modules>
     <module>pathfinding</module>
     <module>ranking</module>
+    <module>fighting</module>
   </modules>
 
   <dependencies>
